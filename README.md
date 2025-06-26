@@ -8,10 +8,11 @@ A **Retrieval-Augmented Generation (RAG)** based chatbot that enhances Large Lan
 
 - 📄 **Multi-format document upload** (PDF, HTML, URLs, etc.)
 - 🔍 **Context-aware answers** using vector search and LLMs
+- ⚡ **FastAPI backend** for modular and scalable APIs
 - 💬 Interactive **chat interface** powered by Streamlit
-- ⚡ Fast semantic retrieval using **FAISS**
 - 📚 Chunking and embedding via **LangChain**
 - 🔐 Environment variable management via `.env`
+
 
 ---
 
@@ -20,10 +21,11 @@ A **Retrieval-Augmented Generation (RAG)** based chatbot that enhances Large Lan
 | Layer           | Technology                             |
 |----------------|-----------------------------------------|
 | 🧠 LLM          | OpenAI / HuggingFace Transformers       |
-| 📄 Document Loaders | LangChain loaders (`PyPDFLoader`, `WebBaseLoader`) |
+| 🧾 API Backend  | FastAPI                                |
 | 🔎 Vector Store | FAISS                                  |
+| 📄 Loaders      | LangChain (PDF, HTML, Web)             |
 | 💬 Frontend     | Streamlit                              |
-| 🧰 Backend Utils| Python, dotenv, tempfile                |
+
 
 ---
 
@@ -40,7 +42,16 @@ RAG-Chatbot/
 ├── requirements.txt
 ├── README.md
 
-![Screenshot 2025-06-24 162436](https://github.com/user-attachments/assets/9592ca01-a113-42c8-bcfc-adacc39ae9c0)
+## 🔌 Running the FastAPI Backend
+
+The project includes a modular FastAPI server for backend APIs (chat endpoint, document upload, history, etc.).
+
+### ▶️ Run FastAPI with Uvicorn
+
+```bash
+uvicorn api.main:app --reload
+```
+
 ![Screenshot 2025-06-24 162436](https://github.com/user-attachments/assets/9592ca01-a113-42c8-bcfc-adacc39ae9c0)
 
 
