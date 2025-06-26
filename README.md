@@ -29,3 +29,23 @@ A **Retrieval-Augmented Generation (RAG)** based chatbot that enhances Large Lan
 
 ## 📁 Folder Structure
 
+RAG-Chatbot/
+│
+├── App/ # Streamlit app interface
+├── Modules/ # RAG core modules
+│ └── RAG/ # Document processing and retrieval
+├── api/ # Optional backend API endpoints
+├── .venv/ # uv virtual environment (not pushed)
+├── .gitignore
+├── requirements.txt
+├── README.md
+
+![Screenshot 2025-06-24 162436](https://github.com/user-attachments/assets/9592ca01-a113-42c8-bcfc-adacc39ae9c0)
+![Screenshot 2025-06-24 162436](https://github.com/user-attachments/assets/9592ca01-a113-42c8-bcfc-adacc39ae9c0)
+
+
+
+
+uv venv
+source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+
